@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { OnChangeArgs, Product } from "../interfaces/interfaces";
 
 interface useProductArgs {
@@ -15,15 +15,8 @@ export const useProduct = ({
   useEffect(() => {
     setcounter(value);
   }, [value]);
-  const isControlled = useRef(!!onChange);
-  const increaseBy = (value: number) => {
-    if (isControlled.current) {
-      return onChange!({
-        count: value,
-        product,
-      });
-    }
 
+  const increaseBy = (value: number) => {
     const newValue = Math.max(counter + value, 0);
     setcounter(newValue);
     console.log("aca toy");
