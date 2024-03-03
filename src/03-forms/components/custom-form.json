@@ -1,0 +1,74 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter first name",
+        "value": "Diego",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "label": "Last Name",
+        "placeholder": "Enter last name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "label": "Email",
+        "placeholder": "Enter email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favourite Game",
+        "value": "",
+        "options": [
+            {
+                "id": "1",
+                "label": "Super Mario"
+            },
+            {
+                "id": "2",
+                "label": "Mario Kart"
+            },
+            {
+                "id": "3",
+                "label": "Pokémon"
+            },
+            {
+                "id": "4",
+                "label": "Dragon Ball"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    }
+]

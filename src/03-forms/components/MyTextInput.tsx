@@ -3,13 +3,18 @@ import { ErrorMessage, useField } from "formik";
 interface Props {
   label: string;
   name: string;
-  type?: "text" | "email" | "password";
+  type?:
+    | "text"
+    | "email"
+    | "password"
+    | "input" /* se agrego input, Fer no lo utiliza */;
   placeholder?: string;
   [x: string]: any;
 }
 
 export const MyTextInput = ({ label, ...props }: Props) => {
   // el meta const [field, meta] = useField(props);
+
   const [field] = useField(props);
 
   return (
